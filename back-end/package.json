@@ -1,0 +1,24 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VirumaaAnts/Welders.git"
+  },
+  "author": "https://github.com/VirumaaAnts",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VirumaaAnts/Welders/issues"
+  },
+  "homepage": "https://github.com/VirumaaAnts/Welders#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "sequelize": "^6.32.0"
+  }
+}
