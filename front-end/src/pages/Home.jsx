@@ -3,7 +3,7 @@ import React from 'react';
 export default function Home() {
     return (
         <div>
-            <div className="main-page">
+            <div id="" className="main-page">
                 <div className="left-side">
                     <div className="text">
                         <h1>Spark Your Skills,</h1>
@@ -21,18 +21,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="aboutUs">
-                <div className='aboutUs_img'>
-                    <img/>
-                </div>
-                <div className='shape_aboutUs'>
-                    <div>
-                        <h2>ABOUT US</h2>
-                        <p>The Ida-Virumaa Vocational Education Center is an honorary vocational education institution in Estonia with 2,500 students, 3,000 vocational training participants and 270 employees.</p>
-                    </div>
-                </div>
-            </div>
-            <div className="aboutUs">
+            <div id="aboutUs" className="aboutUs">
                 <div className='aboutUs_img'>
                     <img/>
                 </div>
