@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=League+Spartan:100,200,300,regular,500,600,700,800,900);
-
+@import url(https://fonts.googleapis.com/css2?family=Oswald&display=swap);
 html {
     scroll-behavior: smooth;
 }
@@ -235,6 +235,7 @@ footer {
 
 .main-page .left-side .text h1 {
     height: 100px;
+    width: max-content;
     padding-left: 20px;
     font-family: 'League Spartan';
     font-size: 96px;
@@ -297,6 +298,10 @@ footer {
 .main-page .left-side .buttons .btn-container a:hover {
     color: #fff;
 }
+.main-page .left-side .buttons .btn-container a[href$='/contacts']:hover {
+    color: #172a56;
+    transition-duration: 0.5s;
+}
 
 .main-page .left-side .buttons .btn-container::before {
     content: "";
@@ -328,3 +333,93 @@ footer {
 }
 
 /* End of main page */
+
+
+/*About us us page */
+
+.aboutUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1080px;
+    position: relative;
+    overflow: hidden;
+}
+.aboutUs_img {
+    margin-right: 40%;
+}
+.aboutUs_img::before {
+    content: "";
+    display: block;
+    position: relative;
+    right: 60px;
+    width: 100%;
+    height: 8px;
+    margin-bottom: 26px;
+    background-color: #F45700;
+}
+
+.aboutUs_img::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 67%;
+    height: 8px;
+    background-color: #F45700;
+    transform: rotate(-90deg) translateX(60%) translateY(-4200%);
+}
+
+.aboutUs_img img{
+    width: auto;
+    height: auto;
+    content: url("/images/image4.png");
+}
+.shape_aboutUs {
+    background-color: #121E39;
+    transform: rotate(30deg);
+    position: absolute;
+    margin-left: 100%;
+    width: 1500px;
+    height: 2500px;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+.shape_aboutUs div {
+    margin-top: 450px;
+    margin-left: 2%;
+    width: 700px;
+    text-align: center;
+    transform: rotate(-30deg);
+}
+.shape_aboutUs h2, .shape_aboutUs p  {
+    color: white;
+}
+.shape_aboutUs div h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.shape_aboutUs div h2::after {
+    content: "";
+    display: block;
+    margin-top: 50px;
+    width: 15%;
+    height: 4px;
+    background-color: #F45700;
+}
+.shape_aboutUs h2 {
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 64px;
+letter-spacing: 0.02em;
+}
+.shape_aboutUs p {
+    font-family: 'League Spartan';
+    margin-top: 40px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 130%;
+}
