@@ -16,9 +16,9 @@ export default function Header() {
                     <li><a href="/">Home</a></li>
                     <li><a href="/about">About Us</a></li>
                     <li><a href="/program">Program</a></li>
-                    <li><a href="/conditions">Conditions</a></li>
                     <li><a href="/gallery">Gallery</a></li>
-                    <li><a href="/contact">Contacts</a></li>
+                    <li><a href="/gallery">Team</a></li>
+                    <li><a href="/faq">FAQ</a></li>
                 </ul>
                 <div className="btn-container">
                     <a href="/contacts">Apply</a>

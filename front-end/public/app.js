@@ -12,7 +12,7 @@ function headerTransition() {
         $('header nav').show();
         $('header .logo').css('margin-left', '70px');
 
-        if ($(window).scrollTop() >= $('.main-page').height()) {
+        if ($(window).scrollTop() >= ($('.main-page').height() + $('.main').height()/2)) {
             // Change header to white color
             $('header').addClass('default');
             $('nav .btn-container a').css('color', '#000');
