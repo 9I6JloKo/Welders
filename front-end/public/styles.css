@@ -470,7 +470,7 @@ footer {
     border-color: #121E39;
 }
 
-.shape_about-us div .btn-container:hover a {   
+.shape_about-us div .btn-container:hover a {
     color: #fff;
 }
 
@@ -584,3 +584,165 @@ footer {
 }
 
 /* End of statistics page */
+
+/* Program page */
+.program-page {
+    width: 100%;
+}
+
+.program-page .program {
+    width: 495px;
+    height: fit-content;
+    border: 2px solid #808080;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* filter: drop-shadow(-2px 4px 4px rgba(0, 0, 0, 0.25)); */
+    font-family: 'League Spartan';
+    padding: 15px 13px;
+    position: relative;
+}
+
+.program h3 {
+    font-weight: 500;
+    font-size: 32px;
+    color: #272727;
+    margin-top: 15px;
+}
+
+.program h3::after {
+    content: "";
+    width: 70px;
+    height: 3px;
+    background-color: #BF3C00;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.program h4 {
+    font-weight: 400;
+    font-size: 32px;
+    color: #3D3D3D;
+}
+
+.program .program-duration {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 33px;
+    display: flex;
+    align-items: center;
+}
+
+.program .program-duration img {
+    margin-top: -4px;
+}
+
+.program .program-duration p {
+    font-weight: 500;
+    font-size: 24px;
+    color: #545454;
+    margin-left: 11px;
+}
+
+.program ul {
+    width: 100%;
+    margin-top: 22px;
+    margin-left: 24.5px;
+}
+
+.program ul li {
+    width: 100%;
+    font-size: 20px;
+    color: #3B3B3B;
+    margin: 13px 0;
+    line-height: 18px;
+}
+
+.program ul li::before {
+    content: "•";
+    color: #F45700;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.program .btn-container {
+    width: 90%;
+    height: 40px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 43px;
+    margin-bottom: 13.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+/* .program .btn-container a {
+    width: 100%;
+    height: 100%;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.program .btn-container a::after {
+    content: "";
+    width: 18px;
+    height: 14px;
+    position: absolute;
+    right: 28px;
+    background-image: url('./images/arrow.svg');
+} */
+
+.btn-1 {
+    font-family: Hack, monospace;
+    background: #0F0F6D;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 2em;
+    padding: 1.5rem;
+    border: 0;
+    transition: all 0.5s;
+    border-radius: 10px;
+    width: auto;
+    position: relative;
+}
+
+.btn-1::after {
+    content: "→";
+    height: 100%;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 400;
+    position: absolute;
+    left: 85%;
+    top: 31%;
+    right: 5%;
+    bottom: 0;
+    opacity: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-1:hover {
+    background: #2b2bff;
+    transition: all 0.5s;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px #0000ff61;
+    padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+}
+
+.btn-1:hover::after {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+/* End of program page */
