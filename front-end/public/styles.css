@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=League+Spartan:100,200,300,regular,500,600,700,800,900);
-@import url(https://fonts.googleapis.com/css2?family=Oswald&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700);
 
 html {
     scroll-behavior: smooth;
@@ -443,6 +443,8 @@ footer {
 }
 
 .shape_about-us div .btn-container a {
+    width: 100%;
+    height: 100%;
     padding: 7px 0;
 }
 
@@ -463,10 +465,6 @@ footer {
 .shape_about-us div .btn-container::before {
     border-bottom: 80px solid #F45700;
     /* border-bottom: 80px solid #BF3C00; */
-}
-
-.shape_about-us div .btn-container:hover {
-    border-color: #121E39;
 }
 
 .shape_about-us div .btn-container:hover a {
@@ -577,7 +575,6 @@ footer {
 .statistics-container .column p {
     width: 100%;
     /* font-size: 42px; */
-    ;
     font-size: 34px;
     line-height: 1%;
 }
@@ -587,16 +584,201 @@ footer {
 /* Program page */
 .program-page {
     width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    /* margin: 0 163px; */
+    overflow: hidden;
+    box-shadow: 1px 3px 7px 3px #cccccc74;
+}
+
+.gray-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #F4F4F4;
+    z-index: 1;
+}
+
+.relative-container {
+    width: 85%;
+    height: 100%;
+    margin-top: 110px;
+    position: relative;
+    z-index: 2;
+}
+
+.program-page .left-column,
+.program-page .right-column {
+    width: 50%;
+    height: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; */
+    position: absolute;
+    bottom: 0;
+}
+
+.program-page .left-column {
+    left: 0;
+    width: 55%;
+}
+
+.program-page .right-column {
+    right: 0;
+    width: 60%;
+}
+
+.program-page h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 64px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.program-page .left-column h1 {
+    width: 692px;
+    height: 120px;
+    background: rgba(191, 60, 0, 0.85);
+    margin-bottom: 58px;
+    margin-left: 74px;
+}
+
+.program-page .left-column .program-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.left-column .program-container .program-description {
+    width: 40%;
+    margin-left: 20px;
+}
+
+.left-column .program-container .program-description p {
+    width: 100%;
+    font-family: 'League Spartan';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 103%;
+    color: #000000;
+    position: relative;
+    padding-left: 19.5px;
+}
+
+.left-column .program-container .program-description p::before {
+    content: "";
+    width: 5px;
+    height: 100%;
+    background-color: #121E39;
+    position: absolute;
+    left: 0;
+}
+
+.right-column .profession-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.right-column .profession-container .profession-description {
+    width: 30%;
+}
+
+.right-column .profession-container .profession-description p {
+    font-family: 'League Spartan';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 93.5%;
+    text-align: right;
+    letter-spacing: 0.02em;
+    color: #000000;
+    position: relative;
+    padding-right: 19.5px;
+    display: flex;
+}
+
+.right-column .profession-container .profession-description p::after {
+    content: "";
+    width: 5px;
+    height: 100%;
+    background-color: #BF3C00;
+    position: absolute;
+    right: 0;
+}
+
+.right-column .profession-container h1 {
+    width: 335px;
+    height: 331px;
+    background: rgba(18, 30, 57, 0.88);
+    margin-left: 20px;
+}
+
+.right-column .program-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 35px;
+}
+
+.right-column .program-container .program-description {
+    width: 60%;
+    height: 100%;
+    margin-left: 20px;
+}
+
+.right-column .program-container .program-description p {
+    font-family: 'League Spartan';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 103%;
+    text-align: right;
+    color: #000000;
+    display: flex;
+    position: relative;
+    padding-right: 19.5px;
+}
+
+.right-column .program-container .program-description p::after {
+    content: "";
+    width: 5px;
+    height: 100%;
+    background-color: #121E39;
+    position: absolute;
+    right: 0;
+}
+
+.right-column .program-container .program {
+    margin-left: 20px;
 }
 
 .program-page .program {
-    width: 495px;
-    height: fit-content;
+    width: 500px;
+    min-width: 500px;
+    height: 460px;
     border: 2px solid #808080;
+    background-color: #f3f3f3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     /* filter: drop-shadow(-2px 4px 4px rgba(0, 0, 0, 0.25)); */
     font-family: 'League Spartan';
-    padding: 15px 13px;
+    padding: 10px 26px;
     position: relative;
 }
 
@@ -666,11 +848,11 @@ footer {
 }
 
 .program .btn-container {
-    width: 90%;
-    height: 40px;
+    width: 100%;
+    height: 45px;
     position: relative;
     margin: 0 auto;
-    margin-top: 43px;
+    margin-top: 35px;
     margin-bottom: 13.5px;
     display: flex;
     justify-content: center;
@@ -678,77 +860,54 @@ footer {
     background-color: #000;
 }
 
-/* .program .btn-container a {
-    width: 100%;
-    height: 100%;
+.program .btn-container button {
+    background: #000;
     font-weight: 500;
     font-size: 22px;
     letter-spacing: 0.01em;
-    color: #FFFFFF;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.program .btn-container a::after {
-    content: "";
-    width: 18px;
-    height: 14px;
-    position: absolute;
-    right: 28px;
-    background-image: url('./images/arrow.svg');
-} */
-
-.btn-1 {
-    font-family: Hack, monospace;
-    background: #0F0F6D;
-    color: #ffffff;
-    cursor: pointer;
-    font-size: 2em;
-    padding: 1.5rem;
     border: 0;
-    transition: all 0.5s;
-    border-radius: 10px;
-    width: auto;
+    color: #FFFFFF;
+    transition: ease all 0.5s;
     position: relative;
 }
 
-.btn-1::after {
-    content: "→";
+.program .btn-container button::after {
+    content: "";
+    background-image: url('./images/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+
     height: 100%;
-    font-family: "Font Awesome 5 Pro";
     font-weight: 400;
     position: absolute;
-    left: 85%;
-    top: 31%;
-    right: 5%;
+    right: 15px;
     bottom: 0;
     opacity: 0;
-
+    padding-left: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: ease all 0.5s;
 }
 
-.btn-1:hover {
-    background: #2b2bff;
+.program .btn-container:hover>button {
+    background: #000;
     transition: all 0.5s;
-    border-radius: 10px;
-    box-shadow: 0px 6px 15px #0000ff61;
-    padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+    padding: 0 3.5rem;
 }
 
-.btn-1:hover::after {
+.program .btn-container:hover>button::after {
     opacity: 1;
-    transition: all 0.5s;
+    transform: translateX(1px) scaleX(1.1);
+    transition: ease all 1s;
 }
 
 /* End of program page */
-/* Gallery page */
 
+/* Gallery page */
 .gallery {
- background-color: #fff;
+    background-color: #fff;
+    margin-top: 50px;
 }
 
 .gallery h2 {
@@ -758,15 +917,13 @@ footer {
     flex-direction: column;
     text-align: center;
     font-family: 'Oswald';
-    font-style: normal;
     font-weight: 400;
     color: black;
     font-size: 48px;
-    line-height: 112.5%;
     letter-spacing: 0.02em;
-    margin-top: 70px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
+
 .gallery h2::after {
     content: "";
     display: block;
@@ -775,6 +932,7 @@ footer {
     height: 5px;
     background-color: #F45700;
 }
+
 .carousel-indicators button {
     background-color: #F45700 !important;
     height: 4px !important;
@@ -783,7 +941,6 @@ footer {
 /* End of gallery page */
 
 /* Our team page */
-
 .teachers {
     background-color: #F4F4F4;
     display: flex;
@@ -793,7 +950,7 @@ footer {
     padding-bottom: 250px;
     padding-top: 50px;
 }
-   
+
 .teachers h2 {
     display: flex;
     justify-content: center;
