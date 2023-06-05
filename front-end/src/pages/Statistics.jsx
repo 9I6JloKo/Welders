@@ -8,7 +8,7 @@ export default function Statistics() {
         <div className="statistics-page">
             <div className="bg-image"></div>
             <div className="statistics-container">
-                <div className="column experience">
+                <div className="column">
                     <div className="img-container">
                         <img src={calendar} alt="experience" />
                     </div>
@@ -18,7 +18,7 @@ export default function Statistics() {
                         <p>of experience</p>
                     </div>
                 </div>
-                <div className="column teachers">
+                <div className="column">
                     <div className="img-container">
                         <img src={teachers} alt="teachers" />
                     </div>
@@ -28,7 +28,7 @@ export default function Statistics() {
                         <p>teachers</p>
                     </div>
                 </div>
-                <div className="column students">
+                <div className="column">
                     <div className="img-container">
                         <img src={students} alt="students" />
                     </div>
