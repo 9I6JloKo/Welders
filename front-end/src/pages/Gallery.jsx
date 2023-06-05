@@ -11,9 +11,7 @@ import picture8 from '../assets/image14.jpg';
 export default function Gallery() {
     return (
         <div id="gallery" className="gallery">
-            <div>
                 <h2>GALLERY</h2>
-            </div>
             <div id="carousel" class="carousel slide" data-bs-ride="carousel">
                 {/* <!-- Indicators/dots --> */}
                 <div class="carousel-indicators">

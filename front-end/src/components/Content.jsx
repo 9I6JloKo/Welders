@@ -3,6 +3,7 @@ import Home from '../pages/Home';
 import AboutUs from '../pages/AboutUs';
 import Statistics from '../pages/Statistics';
 import Gallery from '../pages/Gallery';
+import Teachers from '../pages/Teachers';
 
 export default function Content() {
     return (
@@ -11,6 +12,7 @@ export default function Content() {
             <AboutUs />
             <Statistics />
             <Gallery />
+            <Teachers />
         </div>
     )
 }
