@@ -349,7 +349,6 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* height: 1080px; */
     height: 100vh;
     position: relative;
     overflow: hidden;
@@ -746,3 +745,95 @@ footer {
 }
 
 /* End of program page */
+/* Gallery page */
+
+.gallery {
+ background-color: #fff;
+}
+
+.gallery h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+    font-size: 48px;
+    line-height: 112.5%;
+    letter-spacing: 0.02em;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.gallery h2::after {
+    content: "";
+    display: block;
+    margin-top: 16px;
+    width: 5%;
+    height: 5px;
+    background-color: #F45700;
+}
+.carousel-indicators button {
+    background-color: #F45700 !important;
+    height: 4px !important;
+}
+
+/* End of gallery page */
+
+/* Our team page */
+
+.teachers {
+    background-color: #F4F4F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 250px;
+    padding-top: 50px;
+}
+   
+.teachers h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+    font-size: 48px;
+    line-height: 112.5%;
+    letter-spacing: 0.02em;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.teachers h2::after {
+    content: "";
+    display: block;
+    margin-top: 16px;
+    width: 30%;
+    height: 5px;
+    background-color: #F45700;
+}
+
+.teachers_div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+}
+
+.social_media_teacher {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-color: #121E39;
+    padding: 15px 65px 15px 65px;
+}
+
+/* End of our team page */

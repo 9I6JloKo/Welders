@@ -12,10 +12,10 @@ export default function Home() {
                     <p>Our training facility trains the most qualified welders in the world.</p>
                     <div className="buttons">
                         <div className="btn-container">
-                            <a href="/program">OUR PROGRAM</a>
+                            <a href="#program">OUR PROGRAM</a>
                         </div>
                         <div className="btn-container">
-                            <a href="/contacts">APPLY TO A COURSE</a>
+                            <a href="#contacts">APPLY TO A COURSE</a>
                         </div>
                     </div>
                 </div>
