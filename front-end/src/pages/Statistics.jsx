@@ -15,7 +15,7 @@ export default function Statistics() {
                     <div className="text-container">
                         <h2>20</h2>
                         <p>years</p>
-                        <p>of experience</p>
+                        <p>of experience</p>
                     </div>
                 </div>
                 <div className="column teachers">
@@ -35,7 +35,7 @@ export default function Statistics() {
                     <div className="text-container">
                         <h2>2500</h2>
                         <p>students</p>
-                        <p>every year</p>
+                        <p>every year</p>
                     </div>
                 </div>
             </div>
