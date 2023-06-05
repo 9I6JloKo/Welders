@@ -14,7 +14,7 @@ export default function Teachers() {
             <div className='teachers_div'>
                 <div>
                     <div className='social_media_teacher'>
-                        <a href="https://www.facebook.com/"><img src={facebook} alt=""/></a>
+                        <a href="https://www.facebook.com/"><img src={facebook} alt="" /></a>
                         <a href="https://twitter.com/?lang=ru"><img src={twitter} alt="" /></a>
                         <a href="https://www.youtube.com/@googleplus"><img src={google} alt="" /></a>
                     </div>
@@ -22,7 +22,7 @@ export default function Teachers() {
                 </div>
                 <div>
                     <div className='social_media_teacher'>
-                    <a href="https://www.facebook.com/"><img src={facebook} alt=""/></a>
+                        <a href="https://www.facebook.com/"><img src={facebook} alt="" /></a>
                         <a href="https://twitter.com/?lang=ru"><img src={twitter} alt="" /></a>
                         <a href="https://www.youtube.com/@googleplus"><img src={google} alt="" /></a>
                     </div>
@@ -30,7 +30,7 @@ export default function Teachers() {
                 </div>
                 <div>
                     <div className='social_media_teacher'>
-                    <a href="https://www.facebook.com/"><img src={facebook} alt=""/></a>
+                        <a href="https://www.facebook.com/"><img src={facebook} alt="" /></a>
                         <a href="https://twitter.com/?lang=ru"><img src={twitter} alt="" /></a>
                         <a href="https://www.youtube.com/@googleplus"><img src={google} alt="" /></a>
                     </div>
@@ -38,7 +38,7 @@ export default function Teachers() {
                 </div>
                 <div>
                     <div className='social_media_teacher'>
-                    <a href="https://www.facebook.com/"><img src={facebook} alt=""/></a>
+                        <a href="https://www.facebook.com/"><img src={facebook} alt="" /></a>
                         <a href="https://twitter.com/?lang=ru"><img src={twitter} alt="" /></a>
                         <a href="https://www.youtube.com/@googleplus"><img src={google} alt="" /></a>
                     </div>

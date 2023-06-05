@@ -8,10 +8,11 @@ import picture5 from '../assets/image11.png';
 import picture6 from '../assets/image12.png';
 import picture7 from '../assets/image13.png';
 import picture8 from '../assets/image14.jpg';
+
 export default function Gallery() {
     return (
         <div id="gallery" className="gallery">
-                <h2>GALLERY</h2>
+            <h2>GALLERY</h2>
             <div id="carousel" class="carousel slide" data-bs-ride="carousel">
                 {/* <!-- Indicators/dots --> */}
                 <div class="carousel-indicators">
