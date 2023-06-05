@@ -349,7 +349,6 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* height: 1080px; */
     height: 100vh;
     position: relative;
     overflow: hidden;
@@ -584,3 +583,40 @@ footer {
 }
 
 /* End of statistics page */
+
+/* Gallery page */
+
+.gallery {
+ background-color: #fff;
+}
+
+.gallery div h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+    font-size: 64px;
+    line-height: 112.5%;
+    letter-spacing: 0.02em;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.gallery div h2::after {
+    content: "";
+    display: block;
+    margin-top: 16px;
+    width: 5%;
+    height: 5px;
+    background-color: #F45700;
+}
+.carousel-indicators button {
+    background-color: #F45700 !important;
+    height: 4px !important;
+}
+
+/* End of gallery page */
