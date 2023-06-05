@@ -9,7 +9,9 @@ export default function Statistics() {
             <div className="bg-image"></div>
             <div className="statistics-container">
                 <div className="column experience">
-                    <img src={calendar} alt="experience" />
+                    <div className="img-container">
+                        <img src={calendar} alt="experience" />
+                    </div>
                     <div className="text-container">
                         <h2>20</h2>
                         <p>years</p>
@@ -17,7 +19,9 @@ export default function Statistics() {
                     </div>
                 </div>
                 <div className="column teachers">
-                    <img src={teachers} alt="teachers" />
+                    <div className="img-container">
+                        <img src={teachers} alt="teachers" />
+                    </div>
                     <div className="text-container">
                         <h2>270</h2>
                         <p>professional</p>
@@ -25,7 +29,9 @@ export default function Statistics() {
                     </div>
                 </div>
                 <div className="column students">
-                    <img src={students} alt="students" />
+                    <div className="img-container">
+                        <img src={students} alt="students" />
+                    </div>
                     <div className="text-container">
                         <h2>2500</h2>
                         <p>students</p>
