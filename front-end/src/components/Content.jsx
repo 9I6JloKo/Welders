@@ -5,6 +5,7 @@ import Statistics from '../pages/Statistics';
 import Program from '../pages/Program';
 import Gallery from '../pages/Gallery';
 import Teachers from '../pages/Teachers';
+import Contacts from '../pages/Contacts';
 
 export default function Content() {
     return (
@@ -15,6 +16,7 @@ export default function Content() {
             <Program />
             <Gallery />
             <Teachers />
+            <Contacts />
         </div>
     )
 }

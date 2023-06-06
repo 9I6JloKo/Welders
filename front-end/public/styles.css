@@ -1112,8 +1112,9 @@ footer nav p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 250px;
-    padding-top: 50px;
+    height: 80vh;
+    /* padding-bottom: 250px;
+    padding-top: 50px; */
 }
 
 .teachers h2 {
@@ -1129,7 +1130,7 @@ footer nav p {
     font-size: 48px;
     line-height: 112.5%;
     letter-spacing: 0.02em;
-    margin-top: 70px;
+    /* margin-top: 70px; */
     margin-bottom: 50px;
 }
 
@@ -1252,3 +1253,149 @@ footer nav p {
 }
 
 /* End of our team page */
+
+/* Contacts page */
+.contacts-page {
+    width: 68%;
+    margin: 0 auto;
+    margin: 100px auto;
+}
+
+.contacts-page .top-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 54px;
+}
+
+.contacts-page h1 {
+    width: 100%;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 64px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contacts-page h1::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-top: 16px;
+    width: 120px;
+    height: 5px;
+    background-color: #F45700;
+}
+
+.contacts-page p {
+    width: 50%;
+    font-family: 'League Spartan';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 112.5%;
+    margin-top: 14px;
+    text-align: center;
+    color: #636363;
+}
+
+.contacts-page form {
+    font-family: 'League Spartan';
+    letter-spacing: 0.02em;
+}
+
+.contacts-page form input,
+.contacts-page form textarea,
+.contacts-page form select {
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+}
+
+.contacts-page form input[type="date"],
+.contacts-page form input::placeholder,
+.contacts-page form textarea::placeholder,
+.contacts-page form select {
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: #A8A8A8;
+}
+
+
+.contacts-page form .form-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 17.5px auto; */
+    margin: 8.5px auto;
+}
+
+.contacts-page form .form-row .form-group {
+    width: 46.5%;
+}
+
+.contacts-page form textarea {
+    height: 155px;
+}
+
+.contacts-page form .btn-container {
+    width: 290px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #F45700;
+    position: relative;
+    overflow: hidden;
+    transition: .1s ease-in-out;
+    z-index: 1;
+    margin-top: 8.5px;
+}
+
+.contacts-page form button {
+    width: 100%;
+    height: 100%;
+    font-weight: 700;
+    font-size: 22px;
+    padding-top: 5px;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    transition: .2s ease-in-out;
+    z-index: 2;
+}
+
+.contacts-page form .btn-container::before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: -50px;
+    bottom: 0;
+    left: 0;
+    border-right: 50px solid transparent;
+    border-bottom: 80px solid #BF3C00;
+    transform: translateX(-100%);
+    transition: .5s ease all;
+}
+
+.contacts-page form .btn-container:hover {
+    border-color: #BF3C00;
+}
+
+.contacts-page form .btn-container:hover button {
+    color: #fff;
+}
+
+.contacts-page form .btn-container:hover::before {
+    transform: translateX(0);
+}
+
+/* End of contacts page */
