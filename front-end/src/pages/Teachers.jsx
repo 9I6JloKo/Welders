@@ -17,6 +17,9 @@ export default function Teachers() {
                         <div className="text-container">
                             <h3>Aleksei Drujinskii</h3>
                             <a href="tel:+37253345587">+372 5334 5587</a>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat accusamus
+                            </p>
                         </div>
                     </div>
                     <div className='social_media_teacher'>
@@ -31,6 +34,9 @@ export default function Teachers() {
                         <div className="text-container">
                             <h3>Svetlana Magamedovna</h3>
                             <a href="tel:+37253335123">+372 5333 5123</a>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat accusamus
+                            </p>
                         </div>
                     </div>
                     <div className='social_media_teacher'>
@@ -62,6 +68,9 @@ export default function Teachers() {
                         <div className="text-container">
                             <h3>Dmitrii Akrapovich</h3>
                             <a href="tel:+37242231237">+372 4223 1237</a>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat accusamus
+                            </p>
                         </div>
                     </div>
                     <div className='social_media_teacher'>

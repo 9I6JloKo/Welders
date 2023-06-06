@@ -1168,7 +1168,7 @@ footer nav p {
     background: rgba(0, 0, 0, 0.7);
     z-index: 2;
     transition: ease all .5s;
-    transition-timing-function: cubic-bezier(.77,-0.03,.63,.94);
+    transition-timing-function: cubic-bezier(.77, -0.03, .63, .94);
 }
 
 .teachers_div>div .info-block .text-container {
@@ -1194,30 +1194,43 @@ footer nav p {
     top: -100%;
     opacity: 0;
     margin: 10px 0;
+    transition: ease all 1.2s;
 }
 
 .teachers_div>div .info-block .text-container h3 {
     font-weight: 500;
     font-size: 26px;
-    transition: ease all 2.3s;
+    /* transition: ease all 2.3s; */
 }
 
 .teachers_div>div .info-block .text-container a {
     font-weight: 400;
     font-size: 20px;
     color: #FFC700;
-    transition: ease all 1.7s;
+    /* transition: ease all 1.7s; */
 }
 
 .teachers_div>div .info-block .text-container p {
     font-weight: 300;
     font-size: 16px;
-    transition: ease all 1.3s;
+    /* transition: ease all 1.3s; */
 }
 
 .teachers_div>div:hover>.info-block {
     opacity: 1;
     left: 0;
+}
+
+.teachers_div>div:hover>.info-block p {
+    transition: ease all 1.3s;
+}
+
+.teachers_div>div:hover>.info-block a {
+    transition: ease all 1.7s;
+}
+
+.teachers_div>div:hover>.info-block h3 {
+    transition: ease all 2.3s;
 }
 
 .teachers_div>div:hover>.info-block p,
