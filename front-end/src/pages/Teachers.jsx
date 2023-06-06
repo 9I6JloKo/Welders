@@ -13,6 +13,12 @@ export default function Teachers() {
             <h2>OUR TEACHERS</h2>
             <div className='teachers_div'>
                 <div>
+                    <div className="info-block">
+                        <div className="text-container">
+                            <h3>Aleksei Drujinskii</h3>
+                            <a href="tel:+37253345587">+372 5334 5587</a>
+                        </div>
+                    </div>
                     <div className='social_media_teacher'>
                         <a href="https://www.facebook.com/"><img src={facebook} alt="" /></a>
                         <a href="https://twitter.com/?lang=ru"><img src={twitter} alt="" /></a>
@@ -21,6 +27,12 @@ export default function Teachers() {
                     <img src={teacher1} alt="" />
                 </div>
                 <div>
+                    <div className="info-block">
+                        <div className="text-container">
+                            <h3>Svetlana Magamedovna</h3>
+                            <a href="tel:+37253335123">+372 5333 5123</a>
+                        </div>
+                    </div>
                     <div className='social_media_teacher'>
                         <a href="https://www.facebook.com/"><img src={facebook} alt="" /></a>
                         <a href="https://twitter.com/?lang=ru"><img src={twitter} alt="" /></a>
@@ -29,6 +41,15 @@ export default function Teachers() {
                     <img src={teacher2} alt="" />
                 </div>
                 <div>
+                    <div className="info-block">
+                        <div className="text-container">
+                            <h3>Artemii Karpachov</h3>
+                            <a href="tel:+37255609023">+372 5560 9023</a>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat accusamus
+                            </p>
+                        </div>
+                    </div>
                     <div className='social_media_teacher'>
                         <a href="https://www.facebook.com/"><img src={facebook} alt="" /></a>
                         <a href="https://twitter.com/?lang=ru"><img src={twitter} alt="" /></a>
@@ -37,6 +58,12 @@ export default function Teachers() {
                     <img src={teacher3} alt="" />
                 </div>
                 <div>
+                    <div className="info-block">
+                        <div className="text-container">
+                            <h3>Dmitrii Akrapovich</h3>
+                            <a href="tel:+37242231237">+372 4223 1237</a>
+                        </div>
+                    </div>
                     <div className='social_media_teacher'>
                         <a href="https://www.facebook.com/"><img src={facebook} alt="" /></a>
                         <a href="https://twitter.com/?lang=ru"><img src={twitter} alt="" /></a>
