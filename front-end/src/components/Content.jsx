@@ -6,6 +6,8 @@ import Program from '../pages/Program';
 import Gallery from '../pages/Gallery';
 import Teachers from '../pages/Teachers';
 import Contacts from '../pages/Contacts';
+import Separator from '../pages/Separator';
+import Faq from '../pages/Faq';
 
 export default function Content() {
     return (
@@ -17,6 +19,8 @@ export default function Content() {
             <Gallery />
             <Teachers />
             <Contacts />
+            <Separator />
+            <Faq />
         </div>
     )
 }
