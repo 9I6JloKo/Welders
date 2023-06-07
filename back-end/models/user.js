@@ -9,17 +9,14 @@ User.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        name: { type: DataTypes.STRING },
-        email: { type: DataTypes.STRING },
+        username: { type: DataTypes.STRING },
         password: { type: DataTypes.STRING },
-        role: { type: DataTypes.STRING },
-        refresh_token: { type: DataTypes.TEXT }
     },
     {
         sequelize: db,
         modelName: 'User',
         tableName: 'users',
-        timestamps: true,
+        timestamps: false,
         freezeTableName: true,
     }
 );

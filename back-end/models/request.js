@@ -1,5 +1,6 @@
 import { DataTypes, Model } from 'sequelize';
 import db from '../config/database.js';
+import City from './city.js';
 
 class Request extends Model { }
 Request.init(
@@ -16,8 +17,9 @@ Request.init(
         course: { type: DataTypes.ENUM('semi-automatic', 'welding-metal)') },
         city: { type: DataTypes.INTEGER },
         email: { type: DataTypes.STRING },
-        phone: { type: DataTypes.STRING },
-        description: { type: DataTypes.TEXT },
+        phone: { type: DataTypes.STRING, allowNull: true },
+        description: { type: DataTypes.TEXT, allowNull: true },
+        status: { type: DataTypes.ENUM('pending', 'approved', 'rejected'), defaultValue: 'pending' }
     },
     {
         sequelize: db,
@@ -27,4 +29,7 @@ Request.init(
         freezeTableName: true,
     }
 );
+Request.belongsTo(City, { foreignKey: 'city' });
+City.hasMany(Request, { foreignKey: 'city' });
+
 export default Request;
