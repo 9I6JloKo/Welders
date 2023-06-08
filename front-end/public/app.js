@@ -2,6 +2,7 @@
 $(document).ready(function () {
     headerTransition();
     $(window).scroll(headerTransition);
+    $(window).resize(headerTransition);
 });
 
 function headerTransition() {
@@ -10,7 +11,11 @@ function headerTransition() {
         // Show header on main page
         $('header').addClass('main');
         $('header nav').show();
-        $('header .logo').css('margin-left', '70px');
+        if ($(window).width() < 700) {
+            $('header .logo').css('margin-left', '0');
+        } else {
+            $('header .logo').css('margin-left', '70px');
+        }
 
         if ($(window).scrollTop() >= ($('.main-page').height() - $('header').height() + 180)) {
             // Change header to white color
@@ -29,7 +34,11 @@ function headerTransition() {
         // Hide header
         $('header').removeClass('main');
         $('header nav').hide();
-        $('header .logo').css('margin-left', '120px');
+        if ($(window).width() < 650) {
+            $('header .logo').css('margin-left', '0');
+        } else {
+            $('header .logo').css('margin-left', '120px');
+        }
     }
 
     // Mouse hover effect on apply button
