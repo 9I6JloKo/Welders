@@ -1258,6 +1258,8 @@ footer nav p {
     width: 68%;
     margin: 0 auto;
     margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .contacts-page .top-container {
@@ -1324,7 +1326,6 @@ footer nav p {
     color: #A8A8A8;
 }
 
-
 .contacts-page form .form-row {
     width: 100%;
     display: flex;
@@ -1332,6 +1333,10 @@ footer nav p {
     align-items: center;
     /* margin: 17.5px auto; */
     margin: 8.5px auto;
+}
+
+.contacts-page form .form-row:first-child {
+    margin-top: 0;
 }
 
 .contacts-page form .form-row .form-group {
@@ -1344,7 +1349,7 @@ footer nav p {
 
 .contacts-page form .btn-container {
     width: 290px;
-    height: 50px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1514,3 +1519,172 @@ footer nav p {
 }
 
 /* End of media */
+.contacts-page .right-column {
+    font-family: 'League Spartan';
+    font-weight: 500;
+    font-size: 32px;
+    letter-spacing: 0.02em;
+    color: #414141;
+    padding-left: 35px;
+}
+
+.contacts-page .right-column .contact-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.contacts-page .right-column .contact-row .img-container {
+    width: 85px;
+    height: 85px;
+}
+
+.contacts-page .right-column .contact-row .img-container img {
+    /* width: 100%; */
+    height: 100%;
+}
+
+.contacts-page .right-column .contact-row .info-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 23px;
+}
+
+.contacts-page .right-column .contact-row .info-container p {
+    width: 100%;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: #949494;
+    text-align: left;
+    margin-top: 0;
+}
+
+/* End of contacts page */
+
+/* Separator page */
+.separator-page {
+    width: 100%;
+    height: 470px;
+    background-image: url('./images/separator.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* End of separator page */
+
+/* FAQ page */
+.faq-page {
+    width: 100%;
+    height: 75vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-page .gray-bg {
+    z-index: 1;
+}
+
+.faq-page .faq-container {
+    width: 68%;
+    margin: 0 auto;
+}
+
+.faq-page .column {
+    width: 50%;
+    z-index: 2;
+    position: relative;
+    padding-right: 15px;
+}
+
+.faq-page .column:first-child::after {
+    content: "";
+    width: 9px;
+    height: 125%;
+    background-color: #284484;
+    position: absolute;
+    top: -50px;
+    right: 0;
+    z-index: 1;
+}
+
+.faq-page .column:last-child {
+    margin-left: 35px;
+}
+
+.faq-page .faq-heading {
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 64px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #000000;
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 42px;
+}
+
+.faq-page .faq-heading::after {
+    content: "";
+    width: 8px;
+    height: 100%;
+    background-color: #F45700;
+    /* margin-top: 16px; */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.faq-page .partners-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 20px;
+}
+
+.faq-page .partners-list .partner-container {
+    width: 46%;
+    height: 130px;
+    border: 1px solid #636363 !important;
+    /* padding: 40px 30px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-page .partners-list .partner-container img {
+    width: 80%;
+    /* height: 100%; */
+    object-fit: cover;
+    object-position: center;
+}
+
+.faq-page .accordion {
+    font-family: 'League Spartan';
+}
+
+.faq-page .accordion .accordion-item {
+    margin: 10px;
+    border: 1.5px solid #949494 !important;
+    border-radius: 0;
+}
+
+.faq-page .accordion .accordion-item .accordion-body {
+    font-weight: 400;
+    font-size: 14px;
+    /* line-height: 26px; */
+    color: #636363;
+    border-color: #636363 !important;
+}
+
+/* End of FAQ page */

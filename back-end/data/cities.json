@@ -1,0 +1,178 @@
+[
+    {
+        "id": "1",
+        "name": "Tallinn"
+    },
+    {
+        "id": "2",
+        "name": "Kohtla-Järve"
+    },
+    {
+        "id": "3",
+        "name": "Viljandi"
+    },
+    {
+        "id": "4",
+        "name": "Rakvere"
+    },
+    {
+        "id": "5",
+        "name": "Maardu"
+    },
+    {
+        "id": "6",
+        "name": "Kuressaare"
+    },
+    {
+        "id": "7",
+        "name": "Sillamäe"
+    },
+    {
+        "id": "8",
+        "name": "Valga"
+    },
+    {
+        "id": "9",
+        "name": "Võru"
+    },
+    {
+        "id": "10",
+        "name": "Jõhvi"
+    },
+    {
+        "id": "11",
+        "name": "Haapsalu"
+    },
+    {
+        "id": "12",
+        "name": "Keila"
+    },
+    {
+        "id": "13",
+        "name": "Paide"
+    },
+    {
+        "id": "14",
+        "name": "Elva"
+    },
+    {
+        "id": "15",
+        "name": "Saue"
+    },
+    {
+        "id": "16",
+        "name": "Põlva"
+    },
+    {
+        "id": "17",
+        "name": "Tapa"
+    },
+    {
+        "id": "18",
+        "name": "Jõgeva"
+    },
+    {
+        "id": "19",
+        "name": "Rapla"
+    },
+    {
+        "id": "20",
+        "name": "Kiviõli"
+    },
+    {
+        "id": "21",
+        "name": "Türi"
+    },
+    {
+        "id": "22",
+        "name": "Põltsamaa"
+    },
+    {
+        "id": "23",
+        "name": "Sindi"
+    },
+    {
+        "id": "24",
+        "name": "Paldiski"
+    },
+    {
+        "id": "25",
+        "name": "Kärdla"
+    },
+    {
+        "id": "26",
+        "name": "Kunda"
+    },
+    {
+        "id": "27",
+        "name": "Tõrva"
+    },
+    {
+        "id": "28",
+        "name": "Narva-Jõesuu"
+    },
+    {
+        "id": "29",
+        "name": "Kehra"
+    },
+    {
+        "id": "30",
+        "name": "Loksa"
+    },
+    {
+        "id": "31",
+        "name": "Räpina"
+    },
+    {
+        "id": "32",
+        "name": "Otepää"
+    },
+    {
+        "id": "33",
+        "name": "Tamsalu"
+    },
+    {
+        "id": "34",
+        "name": "Kilingi-Nõmme"
+    },
+    {
+        "id": "35",
+        "name": "Karksi-Nuia"
+    },
+    {
+        "id": "36",
+        "name": "Antsla"
+    },
+    {
+        "id": "37",
+        "name": "Võhma"
+    },
+    {
+        "id": "38",
+        "name": "Mustvee"
+    },
+    {
+        "id": "39",
+        "name": "Lihula"
+    },
+    {
+        "id": "40",
+        "name": "Suure-Jaani"
+    },
+    {
+        "id": "41",
+        "name": "Abja-Paluoja"
+    },
+    {
+        "id": "42",
+        "name": "Püssi"
+    },
+    {
+        "id": "43",
+        "name": "Mõisaküla"
+    },
+    {
+        "id": "44",
+        "name": "Kallaste"
+    }
+]
