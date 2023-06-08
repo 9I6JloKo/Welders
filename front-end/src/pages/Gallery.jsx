@@ -16,9 +16,9 @@ export default function Gallery() {
         <div id="gallery" className="gallery">
             <h2>GALLERY</h2>
             <Carousel id='carousel'>
-                {pictures.map(picture => {
+                {pictures.map((picture, index) => {
                     return (
-                        <Carousel.Item>
+                        <Carousel.Item key={index}>
                             <img
                                 className='d-block w-100'
                                 src={picture}
