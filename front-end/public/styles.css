@@ -88,8 +88,9 @@ body {
     transform: scale(0.8);
 }
 
-.header .navbar-brand img {
-    height: 125%;
+.header .navbar-brand svg {
+    height: 100px;
+    min-height: 100px;
     filter: brightness(80%);
 }
 
@@ -130,15 +131,26 @@ body {
 .header button {
     position: absolute;
     right: 25px;
+    border: none !important;
 }
 
-.navbar-nav a {
-    color: #fff !important;
+.header button:focus {
+    box-shadow: 0 0 0 0.25rem #3e5896;
+}
+
+.navbar-nav .nav-link {
     font-weight: 500 !important;
 }
 
-.navbar-nav a:hover {
-    color: #2c56ba !important;
+.navbar-nav .nav-link.white-burger {
+    width: 100%;
+    color: #fff !important;
+    background-color: #000000a5 !important;
+    border-top: 1px solid #ccc;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #4c4c4ca5 !important;
 }
 
 .navbar-nav .btn-container {
@@ -1183,6 +1195,7 @@ footer nav p {
     transition: ease all .5s;
     transition-timing-function: cubic-bezier(.77, -0.03, .63, .94);
 }
+
 .teachers_div>div .info-block .text-container {
     width: 100%;
     height: 100%;
@@ -1262,6 +1275,7 @@ footer nav p {
     padding: 15px 65px;
     z-index: 3;
 }
+
 .social_media_teacher a {
     margin: auto 10px;
 }
@@ -1596,6 +1610,7 @@ footer nav p {
     .program-page {
         height: fit-content;
     }
+
     .relative-container {
         width: 100%;
         display: flex;
@@ -1603,7 +1618,9 @@ footer nav p {
         justify-content: center;
         align-items: center;
     }
-    .program-page .left-column, .program-page .right-column {
+
+    .program-page .left-column,
+    .program-page .right-column {
         position: unset;
         display: flex;
         justify-content: center;
@@ -1613,42 +1630,51 @@ footer nav p {
         margin: 50px 100px;
         flex-wrap: wrap;
     }
+
     .program-page .left-column h1 {
         margin: unset;
         margin-bottom: 58px;
     }
+
     .program-page .left-column .program-container {
         width: 80%;
         align-items: center;
         justify-content: center;
     }
+
     .right-column .profession-container {
         width: 80%;
         align-items: center;
         justify-content: center;
     }
+
     .left-column .program-container .program-description p {
         height: max-content;
     }
+
     .right-column .program-container {
         width: 80%;
         justify-content: center;
         align-items: center;
     }
+
     .right-column .program-container {
         margin-top: 100px;
     }
 }
+
 @media (max-width:1650px) {
     footer .top-row {
         width: 100%;
         justify-content: center;
         height: fit-content;
     }
+
     footer nav {
         margin-top: 0;
     }
 }
+
 @media (max-width: 1500px) {
     .main-page .left-side {
         width: 60%;
@@ -1666,6 +1692,7 @@ footer nav p {
     .shape_about-us div {
         width: 40% !important;
     }
+
     .statistics-container {
         scale: 0.8;
     }
@@ -1675,34 +1702,43 @@ footer nav p {
     .main-page .left-side {
         width: 80%;
     }
+
     .faq-page {
         height: fit-content;
         padding: 100px 0;
     }
+
     .faq-container {
         height: fit-content;
     }
+
     .d-flex {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     .faq-page .column:first-child::after {
         display: none;
     }
+
     .partners-list {
         margin-bottom: 80px;
     }
+
     .faq-container div {
         justify-content: center;
         align-items: center;
     }
+
     .faq-page .column:last-child {
         margin-left: unset;
     }
+
     .faq-page .column {
         padding-right: unset;
     }
+
     .faq-heading {
         display: flex;
         padding: unset !important;
@@ -1710,9 +1746,11 @@ footer nav p {
         align-items: center;
         text-align: center;
     }
+
     .faq-page .faq-container {
         width: 100%;
     }
+
     .faq-page .faq-heading::before {
         content: "";
         width: 8px;
@@ -1724,15 +1762,17 @@ footer nav p {
         bottom: 0;
         top: 0;
     }
+
     .partners-list::after {
         content: "";
         width: 100%;
         height: 8px;
         background-color: #284484;
         position: absolute;
-        bottom:40px;
+        bottom: 40px;
         z-index: 1;
     }
+
     footer .top-row .column {
         display: flex;
         justify-content: center;
@@ -1742,21 +1782,27 @@ footer nav p {
         margin-bottom: 25px;
         text-align: center;
     }
+
     footer .top-row .column a {
         text-align: center;
     }
+
     footer nav {
         width: 100%;
-    };
+    }
+
+    ;
 }
 
 @media (max-width:1150px) {
     .navbar-nav {
         justify-content: flex-start !important;
     }
+
     .statistics-page {
         height: fit-content;
     }
+
     .statistics-container {
         height: max-content;
         margin: 50px auto;
@@ -1764,13 +1810,16 @@ footer nav p {
         scale: 1;
         flex-direction: column;
     }
-    .statistics-container .column h2{
+
+    .statistics-container .column h2 {
         line-height: 150%;
     }
-    .statistics-container .column p{
+
+    .statistics-container .column p {
         line-height: 100%;
     }
 }
+
 @media (max-width: 1000px) {
     .header {
         justify-content: center;
@@ -1811,30 +1860,38 @@ footer nav p {
         height: 5px;
         background: #BF3C00;
     }
+
     .program-page .left-column .program-container {
         flex-direction: column !important;
         text-align: justify;
     }
+
     .program-page .left-column .program-container .program {
         margin-bottom: 50px;
-        
+
     }
+
     .program-page .program {
         width: 100%;
     }
+
     .program-page .left-column h1 {
         width: 100%;
     }
+
     .left-column .program-container .program-description {
         margin-left: unset;
     }
+
     .left-column .program-container .program-description {
         width: 100%;
         padding-left: unset;
     }
+
     .left-column .program-container .program-description p {
         padding-left: unset;
     }
+
     .left-column .program-container .program-description p::before {
         content: "";
         width: 100%;
@@ -1843,47 +1900,60 @@ footer nav p {
         position: absolute;
         top: -20px;
     }
+
     .right-column {
         text-align: justify;
     }
+
     .right-column .program-container {
         flex-direction: column-reverse;
     }
+
     .program-page .program {
         margin-bottom: 50px;
     }
+
     .right-column .program-container .program-description p::after {
         display: none;
     }
+
     .right-column .program-container .program-description {
         width: 100%;
         margin-left: unset;
     }
+
     .right-column .program-container .program {
         margin-left: unset;
     }
+
     .right-column .program-container .program-description p {
         padding-right: unset;
         text-align: justify;
     }
+
     .right-column .profession-container {
         flex-direction: column-reverse;
     }
+
     .right-column .profession-container h1 {
         margin: unset;
         padding: unset;
         margin-bottom: 50px;
     }
+
     .right-column .profession-container .profession-description {
         width: 100%;
     }
+
     .right-column .profession-container .profession-description p {
         padding: unset;
         text-align: justify;
     }
+
     .right-column .profession-container .profession-description p::after {
         display: none;
     }
+
     .right-column .profession-container .profession-description p::before {
         content: "";
         width: 100%;
@@ -1892,6 +1962,7 @@ footer nav p {
         position: absolute;
         top: -20px;
     }
+
     .right-column .program-container .program-description p::before {
         content: "";
         width: 100%;
@@ -1953,70 +2024,97 @@ footer nav p {
         width: 60% !important;
         margin: 30px auto !important;
     }
+
     .program-page .program {
         text-align: left;
         width: 100% !important;
         min-width: unset !important;
         height: fit-content !important;
     }
-    .program-page .program ul{
+
+    .program-page .program ul {
         padding-right: 24.5px;
     }
-    .contacts-page .left-column{
+
+    .contacts-page .left-column {
         margin-bottom: 50px;
     }
+
     .contacts-page {
         width: 80%;
     }
+
     .contact-row .info-container {
         width: fit-content;
     }
+
     .contact-row .info-container a {
         word-break: break-all;
     }
+
     .contacts-page form .btn-container {
         width: 100%;
     }
+
     .contacts-page p {
         width: 100%;
     }
+
     .w-50 {
         width: 100% !important;
     }
+
     .faq-page .faq-container {
         width: 80%;
     }
+
     .teachers h2 {
         margin-bottom: 0px !important;
     }
 }
+
 @media (max-width: 700px) {
     .main-page .left-side p {
         font-size: 5vw;
     }
 }
+
 @media (max-width: 500px) {
-    .left-column .program-container .program-description p, .right-column .profession-container .profession-description p, .right-column .program-container .program-description p, .contacts-page p {
+
+    .left-column .program-container .program-description p,
+    .right-column .profession-container .profession-description p,
+    .right-column .program-container .program-description p,
+    .contacts-page p {
         font-size: 5vw;
     }
-    .right-column .profession-container h1, .program-page .left-column h1, .faq-page .faq-heading {
+
+    .right-column .profession-container h1,
+    .program-page .left-column h1,
+    .faq-page .faq-heading {
         font-size: 10vw;
-        height: 100px; 
+        height: 100px;
         padding: unset;
     }
-    .gallery h2, .teachers h2, .contacts-page h1 {
+
+    .gallery h2,
+    .teachers h2,
+    .contacts-page h1 {
         font-size: 10vw;
     }
+
     .right-column .profession-container h1 {
         margin-bottom: 40px;
     }
+
     .statistics-container {
         scale: 0.7;
         margin: unset;
     }
+
     .main-page .left-side p {
         font-size: 7vw;
     }
+
     .shape_about-us div p {
         font-size: 6vw !important;
     }
@@ -2025,25 +2123,41 @@ footer nav p {
         font-size: 4.5vw !important;
         width: 80% !important;
     }
+
     .partners-container {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 }
+
+@media (max-width: 480px) {
+    .header .navbar-brand {
+        justify-content: flex-start;
+    }
+}
+
 @media (max-width:400px) {
     .shape_about-us div h2 {
         font-size: 10vw !important;
     }
-    .left-column .program-container .program-description p, .right-column .profession-container .profession-description p, .right-column .program-container .program-description p, .shape_about-us div p, .shape_about-us div .btn-container {
+
+    .left-column .program-container .program-description p,
+    .right-column .profession-container .profession-description p,
+    .right-column .program-container .program-description p,
+    .shape_about-us div p,
+    .shape_about-us div .btn-container {
         font-size: 6vw !important;
     }
+
     .faq-page .partners-list .partner-container {
         width: 100%;
     }
+
     .contact-container {
         margin-bottom: 30px;
     }
+
     .contact {
         flex-direction: column !important;
         justify-content: center !important;
@@ -2051,15 +2165,19 @@ footer nav p {
         margin-bottom: 40px;
     }
 }
+
 @media (max-width: 300px) {
     .column {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .column p, .column h2{
+
+    .column p,
+    .column h2 {
         text-align: center;
     }
+
     .text-container {
         margin-left: unset !important;
     }
