@@ -1662,6 +1662,64 @@ footer nav p {
     .main-page .left-side {
         width: 80%;
     }
+    .faq-page {
+        height: fit-content;
+        padding: 100px 0;
+    }
+    .faq-container {
+        height: fit-content;
+    }
+    .d-flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .faq-page .column:first-child::after {
+        display: none;
+    }
+    .partners-list {
+        margin-bottom: 80px;
+    }
+    .faq-container div {
+        justify-content: center;
+        align-items: center;
+    }
+    .faq-page .column:last-child {
+        margin-left: unset;
+    }
+    .faq-page .column {
+        padding-right: unset;
+    }
+    .faq-heading {
+        display: flex;
+        padding: unset !important;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .faq-page .faq-container {
+        width: 100%;
+    }
+    .faq-page .faq-heading::before {
+        content: "";
+        width: 8px;
+        height: 100%;
+        background-color: #F45700;
+        /* margin-top: 16px; */
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
+    }
+    .partners-list::after {
+        content: "";
+        width: 100%;
+        height: 8px;
+        background-color: #284484;
+        position: absolute;
+        bottom:40px;
+        z-index: 1;
+    }
 }
 
 @media (max-width:1150px) {
@@ -1897,6 +1955,9 @@ footer nav p {
     .w-50 {
         width: 100% !important;
     }
+    .faq-page .faq-container {
+        width: 80%;
+    }
 }
 @media (max-width: 700px) {
     .main-page .left-side p {
@@ -1904,15 +1965,15 @@ footer nav p {
     }
 }
 @media (max-width: 500px) {
-    .left-column .program-container .program-description p, .right-column .profession-container .profession-description p, .right-column .program-container .program-description p {
+    .left-column .program-container .program-description p, .right-column .profession-container .profession-description p, .right-column .program-container .program-description p, .contacts-page p {
         font-size: 5vw;
     }
-    .right-column .profession-container h1, .program-page .left-column h1 {
+    .right-column .profession-container h1, .program-page .left-column h1, .faq-page .faq-heading {
         font-size: 10vw;
         height: 100px; 
         padding: unset;
     }
-    .gallery h2, .teachers h2 {
+    .gallery h2, .teachers h2, .contacts-page h1 {
         font-size: 10vw;
     }
     .right-column .profession-container h1 {
@@ -1932,6 +1993,17 @@ footer nav p {
     .shape_about-us div .btn-container {
         font-size: 4.5vw !important;
         width: 80% !important;
+    }
+}
+@media (max-width:400px) {
+    .shape_about-us div h2 {
+        font-size: 10vw !important;
+    }
+    .left-column .program-container .program-description p, .right-column .profession-container .profession-description p, .right-column .program-container .program-description p, .shape_about-us div p, .shape_about-us div .btn-container {
+        font-size: 6vw !important;
+    }
+    .faq-page .partners-list .partner-container {
+        width: 100%;
     }
 }
 @media (max-width: 300px) {
