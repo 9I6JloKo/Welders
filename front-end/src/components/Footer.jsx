@@ -11,17 +11,21 @@ export default function Footer() {
                 <div className="column">
                     <h3>Partners</h3>
                     <div className="partners-container">
-                        <div className="partner">
-                            <img src={hariduskopter} alt="hariduskopter" />
+                        <div>
+                            <div className="partner">
+                                <img src={hariduskopter} alt="hariduskopter" />
+                            </div>
+                            <div className="partner">
+                                <img src={noorteamet} alt="haridus ja noorteamet" />
+                            </div>
                         </div>
-                        <div className="partner">
-                            <img src={noorteamet} alt="haridus ja noorteamet" />
-                        </div>
-                        <div className="partner">
-                            <img src={sihtasutus} alt="integratsiooni sihtasutus" />
-                        </div>
-                        <div className="partner">
-                            <img src={kutsekoda} alt="kutsekoda sihtasutus" />
+                        <div>
+                            <div className="partner">
+                                <img src={sihtasutus} alt="integratsiooni sihtasutus" />
+                            </div>
+                            <div className="partner">
+                                <img src={kutsekoda} alt="kutsekoda sihtasutus" />
+                            </div>
                         </div>
                     </div>
                     <div className="btn-container">
@@ -54,7 +58,7 @@ export default function Footer() {
                         <div className="contact">
                             <p>Täiendusõppe kursused</p>
                             <div>
-                                <a href="tel:+37256880405 ">+372 5688 0405</a>
+                                <a href="tel:+37256880405 ">+372 5688 0405</a>
                                 <a href="tel:+3725261318">+372 526 1318</a>
                             </div>
                         </div>
@@ -69,7 +73,7 @@ export default function Footer() {
                     <li><a href="https://www.instagram.com/idavirumaa_kutsehariduskeskus/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
                     <li><a href="https://www.youtube.com/channel/UC6TPd9ePy3n-vFQRgtbhx-w" target="_blank" rel="noopener noreferrer">Youtube</a></li>
                     <li><a href="https://vk.com/ivkhk" target="_blank" rel="noopener noreferrer">VKontakte</a></li>
-                    <li><a href="https://www.youtube.com/channel/UCLxa63lO1rkF62tv8d7P4Cw/videos" target="_blank" rel="noopener noreferrer">Kooli TV</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCLxa63lO1rkF62tv8d7P4Cw/videos" target="_blank" rel="noopener noreferrer">Kooli TV</a></li>
                 </ul>
                 <p>Copyright 2020 © Ida-Virumaa Kutsehariduskeskus</p>
             </nav>
