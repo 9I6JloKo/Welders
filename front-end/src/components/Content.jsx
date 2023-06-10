@@ -20,15 +20,15 @@ export default function Content() {
                 <Routes>
                     <Route exact path='/' element={
                         [
-                            <Home />,
-                            <AboutUs />,
-                            <Statistics />,
-                            <Program />,
-                            <Gallery />,
-                            <Teachers />,
-                            <Contacts />,
-                            <Separator />,
-                            <Faq />,
+                            <Home key={1} />,
+                            <AboutUs key={2} />,
+                            <Statistics key={3} />,
+                            <Program key={4} />,
+                            <Gallery key={5} />,
+                            <Teachers key={6} />,
+                            <Contacts key={7} />,
+                            <Separator key={8} />,
+                            <Faq key={9} />,
                         ]
                     } />
                     <Route path='/sign-in' element={<SignIn />} />
