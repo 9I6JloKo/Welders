@@ -690,11 +690,11 @@ footer nav p {
 .statistics-container {
     width: 100%;
     height: 135px;
-    margin: 0 100%;
+    margin: 0 220px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12%;
+    gap: 120px;
     z-index: 2;
 }
 
@@ -1115,9 +1115,9 @@ footer nav p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 80vh;
-    /* padding-bottom: 250px;
-    padding-top: 50px; */
+    height: max-content;
+    padding-bottom: 200px;
+    padding-top: 50px;
 }
 
 .teachers h2 {
@@ -1150,12 +1150,18 @@ footer nav p {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
     width: 90%;
 }
 
 .teachers_div>div {
     box-shadow: 1px 1px 3px 3px #ccc;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 20px;
     z-index: 1;
     position: relative;
     overflow: hidden;
@@ -1174,7 +1180,6 @@ footer nav p {
     transition: ease all .5s;
     transition-timing-function: cubic-bezier(.77, -0.03, .63, .94);
 }
-
 .teachers_div>div .info-block .text-container {
     width: 100%;
     height: 100%;
@@ -1253,6 +1258,9 @@ footer nav p {
     background-color: #121E39;
     padding: 15px 65px;
     z-index: 3;
+}
+.social_media_teacher a {
+    margin: auto 10px;
 }
 
 /* End of our team page */
@@ -1406,182 +1414,6 @@ footer nav p {
     transform: translateX(0);
 }
 
-/* End of contacts page */
-
-
-
-
-/* Media */
-
-@media (max-width: 1500px) {
-    .main-page .left-side {
-        width: 60%;
-    }
-
-    .main-page .left-side .buttons .buttons {
-        width: 100%;
-    }
-
-    .shape_about-us {
-        margin-left: 130% !important;
-        margin-right: 50px;
-    }
-
-    .shape_about-us div {
-        width: 40% !important;
-    }
-}
-
-@media (max-width: 1250px) {
-    nav ul {
-        justify-content: space-between;
-        width: fit-content;
-        /* font-size: 1.5vw; */
-        gap: 0.9vw;
-    }
-
-    .main-page .left-side {
-        width: 80%;
-    }
-}
-
-@media (max-width:1150px) {
-    nav {
-        justify-content: flex-start !important;
-    }
-}
-
-@media (max-width:1050px) {
-    nav ul {
-        font-size: 1.7vw;
-    }
-}
-
-@media (max-width: 1000px) {
-    header {
-        justify-content: center;
-        padding: unset;
-    }
-
-    .main-page .left-side {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-        padding: 0 0;
-        align-items: center;
-        text-align: center;
-        padding-top: 75px;
-    }
-
-    .main-page .left-side .text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .main-page .left-side .text::before {
-        display: none;
-    }
-
-    .main-page .left-side .text::after {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 90%;
-        bottom: 0;
-        height: 5px;
-        background: #BF3C00;
-    }
-}
-
-@media (max-width:850px) {
-    .main-page .left-side .text {
-        height: fit-content;
-    }
-
-    .main-page .left-side .text h1 {
-        font-size: 10vw;
-
-        height: auto;
-        line-height: auto;
-    }
-
-    .main-page .left-side p {
-        font-size: 5vw;
-        height: auto;
-        line-height: auto;
-    }
-
-    .main-page .left-side .buttons .btn-container a {
-        font-size: 3.8vw !important;
-    }
-
-    .shape_about-us {
-        margin: unset !important;
-        width: 100% !important;
-        justify-content: center;
-        transform: rotate(0deg) !important;
-    }
-
-    .shape_about-us h2 {
-        font-size: 8vw !important;
-    }
-
-    .shape_about-us div {
-        width: 90% !important;
-        padding: unset !important;
-        margin: unset !important;
-        transform: rotate(0deg) !important;
-    }
-
-    .shape_about-us div p {
-        width: 100%;
-        font-size: 4.5vw !important;
-        margin: 20px 0 !important;
-    }
-
-    .shape_about-us div .btn-container {
-        font-size: 3.8vw !important;
-        width: 60% !important;
-        margin: 30px auto !important;
-    }
-}
-
-@media (max-width:800px) {
-    nav {
-        justify-content: center !important;
-        flex-grow: 1;
-        padding-right: 25px !important;
-    }
-
-    nav ul {
-        display: none;
-    }
-
-    nav div {
-        width: 100% !important;
-    }
-
-    nav .btn-container a {
-        width: 200px;
-    }
-}
-
-@media (max-width:600px) {
-    header nav .btn-container {
-        width: 150px !important;
-        margin-left: 0 !important;
-    }
-}
-
-@media (max-width:525px) {
-    header nav .btn-container {
-        display: none;
-    }
-}
-
-/* End of media */
 .contacts-page .right-column {
     font-family: 'League Spartan';
     font-weight: 500;
@@ -1637,6 +1469,7 @@ footer nav p {
     height: 470px;
     background-image: url('./images/separator.jpg');
     background-repeat: no-repeat;
+    background-position: 50% 50%;
     background-size: cover;
 }
 
@@ -1756,7 +1589,53 @@ footer nav p {
 
 
 /* Media */
-
+@media (max-width:1800px) {
+    .program-page {
+        height: fit-content;
+    }
+    .relative-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .program-page .left-column, .program-page .right-column {
+        position: unset;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 50px 100px;
+        flex-wrap: wrap;
+    }
+    .program-page .left-column h1 {
+        margin: unset;
+        margin-bottom: 58px;
+    }
+    .program-page .left-column .program-container {
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+    .right-column .profession-container {
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+    .left-column .program-container .program-description p {
+        height: max-content;
+    }
+    .right-column .program-container {
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+    .right-column .program-container {
+        margin-top: 100px;
+    }
+}
 @media (max-width: 1500px) {
     .main-page .left-side {
         width: 60%;
@@ -1774,6 +1653,9 @@ footer nav p {
     .shape_about-us div {
         width: 40% !important;
     }
+    .statistics-container {
+        scale: 0.8;
+    }
 }
 
 @media (max-width: 1250px) {
@@ -1786,8 +1668,23 @@ footer nav p {
     .navbar-nav {
         justify-content: flex-start !important;
     }
+    .statistics-page {
+        height: fit-content;
+    }
+    .statistics-container {
+        height: max-content;
+        margin: 50px auto;
+        gap: 80px;
+        scale: 1;
+        flex-direction: column;
+    }
+    .statistics-container .column h2{
+        line-height: 150%;
+    }
+    .statistics-container .column p{
+        line-height: 100%;
+    }
 }
-
 @media (max-width: 1000px) {
     .header {
         justify-content: center;
@@ -1828,6 +1725,95 @@ footer nav p {
         height: 5px;
         background: #BF3C00;
     }
+    .program-page .left-column .program-container {
+        flex-direction: column !important;
+        text-align: justify;
+    }
+    .program-page .left-column .program-container .program {
+        margin-bottom: 50px;
+        
+    }
+    .program-page .program {
+        width: 100%;
+    }
+    .program-page .left-column h1 {
+        width: 100%;
+    }
+    .left-column .program-container .program-description {
+        margin-left: unset;
+    }
+    .left-column .program-container .program-description {
+        width: 100%;
+        padding-left: unset;
+    }
+    .left-column .program-container .program-description p {
+        padding-left: unset;
+    }
+    .left-column .program-container .program-description p::before {
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-color: #121E39;
+        position: absolute;
+        top: -20px;
+    }
+    .right-column {
+        text-align: justify;
+    }
+    .right-column .program-container {
+        flex-direction: column-reverse;
+    }
+    .program-page .program {
+        margin-bottom: 50px;
+    }
+    .right-column .program-container .program-description p::after {
+        display: none;
+    }
+    .right-column .program-container .program-description {
+        width: 100%;
+        margin-left: unset;
+    }
+    .right-column .program-container .program {
+        margin-left: unset;
+    }
+    .right-column .program-container .program-description p {
+        padding-right: unset;
+        text-align: justify;
+    }
+    .right-column .profession-container {
+        flex-direction: column-reverse;
+    }
+    .right-column .profession-container h1 {
+        margin: unset;
+        padding: unset;
+        margin-bottom: 50px;
+    }
+    .right-column .profession-container .profession-description {
+        width: 100%;
+    }
+    .right-column .profession-container .profession-description p {
+        padding: unset;
+        text-align: justify;
+    }
+    .right-column .profession-container .profession-description p::after {
+        display: none;
+    }
+    .right-column .profession-container .profession-description p::before {
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-color: #BF3C00;
+        position: absolute;
+        top: -20px;
+    }
+    .right-column .program-container .program-description p::before {
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-color: #121E39;
+        position: absolute;
+        top: -20px;
+    }
 }
 
 @media (max-width:850px) {
@@ -1837,13 +1823,13 @@ footer nav p {
 
     .main-page .left-side .text h1 {
         font-size: 10vw;
-
+        padding: unset;
         height: auto;
         line-height: auto;
     }
 
     .main-page .left-side p {
-        font-size: 5vw;
+        /* font-size: 5vw; */
         height: auto;
         line-height: auto;
     }
@@ -1872,7 +1858,7 @@ footer nav p {
 
     .shape_about-us div p {
         width: 100%;
-        font-size: 4.5vw !important;
+        font-size: 4vw !important;
         margin: 20px 0 !important;
     }
 
@@ -1880,6 +1866,85 @@ footer nav p {
         font-size: 3.8vw !important;
         width: 60% !important;
         margin: 30px auto !important;
+    }
+    .program-page .program {
+        text-align: left;
+        width: 100% !important;
+        min-width: unset !important;
+        height: fit-content !important;
+    }
+    .program-page .program ul{
+        padding-right: 24.5px;
+    }
+    .contacts-page .left-column{
+        margin-bottom: 50px;
+    }
+    .contacts-page {
+        width: 80%;
+    }
+    .contact-row .info-container {
+        width: fit-content;
+    }
+    .contact-row .info-container a {
+        word-break: break-all;
+    }
+    .contacts-page form .btn-container {
+        width: 100%;
+    }
+    .contacts-page p {
+        width: 100%;
+    }
+    .w-50 {
+        width: 100% !important;
+    }
+}
+@media (max-width: 700px) {
+    .main-page .left-side p {
+        font-size: 5vw;
+    }
+}
+@media (max-width: 500px) {
+    .left-column .program-container .program-description p, .right-column .profession-container .profession-description p, .right-column .program-container .program-description p {
+        font-size: 5vw;
+    }
+    .right-column .profession-container h1, .program-page .left-column h1 {
+        font-size: 10vw;
+        height: 100px; 
+        padding: unset;
+    }
+    .gallery h2, .teachers h2 {
+        font-size: 10vw;
+    }
+    .right-column .profession-container h1 {
+        margin-bottom: 40px;
+    }
+    .statistics-container {
+        scale: 0.7;
+        margin: unset;
+    }
+    .main-page .left-side p {
+        font-size: 7vw;
+    }
+    .shape_about-us div p {
+        font-size: 6vw !important;
+    }
+
+    .shape_about-us div .btn-container {
+        font-size: 4.5vw !important;
+        width: 80% !important;
+    }
+}
+@media (max-width: 300px) {
+    .column {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .column p, .column h2{
+        text-align: center;
+    }
+    .text-container {
+        margin-left: unset !important;
     }
 }
 
