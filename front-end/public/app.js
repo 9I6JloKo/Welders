@@ -19,6 +19,7 @@ $(document).ready(function () {
         $('.nav-link-apply').show();
         headerTransition();
     });
+
 });
 
 function headerTransition() {
@@ -107,4 +108,19 @@ function headerTransition() {
         $(window).scrollTop() >= $('.main-page').height()
             ? $(this).addClass('text-dark') : $(this).addClass('text-white');
     });
+
+    // eslint-disable-next-line no-restricted-globals
+    if (location.pathname !== '/') {
+        $('.header').addClass(['default', 'main']);
+        // Change header to white color
+        $('.header').addClass('default');
+        // dark nav links + logo
+        $('.header a, .header p').addClass('text-dark');
+        $('.header a, .header p').removeClass('text-white');
+        // dark burger menu
+        $('.header').removeClass('navbar-dark');
+        $('.header').addClass('navbar-light');
+        // increase logo saturation
+        $('.header .navbar-brand svg').css('filter', 'saturate(150%)');
+    }
 }

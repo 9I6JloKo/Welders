@@ -29,3 +29,10 @@ export const signIn = async (req, res) => {
         });
     }
 };
+
+export const logout = (req, res) => {
+    req.session.destroy();
+    res.json({
+        message: 'Logout successful!'
+    });
+};

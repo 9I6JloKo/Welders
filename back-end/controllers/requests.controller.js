@@ -66,8 +66,7 @@ const changeReuqestStatus = async (req, res) => {
                 message: 'Request not found!'
             });
         }
-        request.status = req.body.status;
-        await request.save();
+        await Request.update({ status: req.body.status }, { where: { id: req.params.id } })
         res.json(request);
     } catch (error) {
         res.status(500).json({

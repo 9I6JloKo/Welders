@@ -14,7 +14,7 @@ Request.init(
         surname: { type: DataTypes.STRING },
         personalCode: { type: DataTypes.STRING, unique: true },
         birthDate: { type: DataTypes.DATEONLY },
-        course: { type: DataTypes.ENUM('semi-automatic', 'welding-metal)') },
+        course: { type: DataTypes.ENUM('semi-automatic', 'welding-metal') },
         city: { type: DataTypes.INTEGER },
         email: { type: DataTypes.STRING },
         phone: { type: DataTypes.STRING, allowNull: true },

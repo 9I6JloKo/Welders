@@ -35,7 +35,7 @@ app.use(
 
 // Routes
 app.use('/requests', requestsRoute);
-app.use('/sign-in', authRoute);
+app.use('/auth', authRoute);
 
 // Start server
 const PORT = process.env.PORT || 5000;

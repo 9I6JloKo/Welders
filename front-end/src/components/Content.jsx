@@ -12,6 +12,8 @@ import Separator from '../pages/Separator';
 import Faq from '../pages/Faq';
 
 import SignIn from '../pages/SignIn';
+import Requests from '../pages/Requests';
+import RequestDetails from '../pages/RequestDetails';
 
 export default function Content() {
     return (
@@ -32,6 +34,8 @@ export default function Content() {
                         ]
                     } />
                     <Route path='/sign-in' element={<SignIn />} />
+                    <Route path='/requests' element={<Requests />} />
+                    <Route path='/requests/:id' element={<RequestDetails />} />
                 </Routes>
             </Router>
         </div>

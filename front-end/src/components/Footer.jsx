@@ -1,10 +1,22 @@
 import React from 'react';
+import axios from 'axios';
 import hariduskopter from '../assets/kopter_logo_300x169.png';
 import noorteamet from '../assets/haridus-_ja_noorteamet_3lovi_est_rgb.png';
 import sihtasutus from '../assets/integratsiooni-sihtasutus.png';
 import kutsekoda from '../assets/kutsekoda-logo.png';
 
 export default function Footer() {
+    const logout = async () => {
+        try {
+            await axios.delete('http://localhost:8080/auth/logout');
+            sessionStorage.removeItem('username');
+        } catch (error) {
+            if (error.response) {
+                console.log(error.response.data.message);
+            }
+        }
+    };
+
     return (
         <footer>
             <div className="top-row">
@@ -29,7 +41,10 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="btn-container">
-                        <a href="/sign-in">Sign in</a>
+                        {sessionStorage.getItem("username") === undefined
+                            ? <a href="/sign-in">Sign in</a>
+                            : <a href='/' onClick={logout}>Logout</a>
+                        }
                     </div>
                 </div>
                 <div className="column">

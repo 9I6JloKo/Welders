@@ -5,7 +5,7 @@ import { Nav, Navbar } from 'react-bootstrap';
 export default function Header() {
     return (
         <Navbar className='header' collapseOnSelect expand="lg">
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="/">
                 <Logo
                     alt="IVKHK"
                     className="d-inline-block align-top"

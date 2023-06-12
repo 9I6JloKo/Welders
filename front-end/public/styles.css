@@ -149,10 +149,6 @@ body {
     border-top: 1px solid #ccc;
 }
 
-.navbar-nav .nav-link:hover {
-    /* background-color: #4c4c4ca5 !important; */
-}
-
 .navbar-nav .btn-container {
     width: 20%;
     height: 100%;
@@ -1607,7 +1603,137 @@ footer nav p {
 
 /* End of FAQ page */
 
+/* Sign in page */
+.sign-in-page {
+    width: 30%;
+    height: 50vh;
+    font-family: 'League Spartan';
+    font-weight: 400;
+    text-align: center;
+    color: #636363;
+    margin-top: 70px;
+}
 
+.sign-in-page h1 {
+    width: 100%;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 64px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sign-in-page h1::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-top: 16px;
+    width: 120px;
+    height: 5px;
+    background-color: #F45700;
+}
+
+.sign-in-page form {
+    font-size: 24px;
+}
+
+.sign-in-page form .btn-container {
+    width: 20%;
+    height: 100%;
+}
+
+.sign-in-page form .btn-container button {
+    position: relative;
+    text-align: center;
+    font-weight: 600 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #F45700;
+    background-color: transparent;
+    color: #000000;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.sign-in-page form .btn-container button::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: -50px;
+    bottom: 0;
+    left: 0;
+    border-right: 50px solid transparent;
+    border-bottom: 80px solid #F45700;
+    transform: translateX(-100%);
+    transition: 0.5s ease all;
+}
+
+.sign-in-page form .btn-container button:hover::before {
+    transform: translateX(0);
+}
+
+/* End of sign in page */
+
+/* Requests page */
+
+.requests-page h1 {
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: #000000;
+    text-align: center;
+    margin: 15px 0;
+    margin-bottom: 40px;
+}
+
+.requests-page table {
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 500;
+}
+
+.requests-page table .btn-container button {
+    width: 100%;
+    height: 100%;
+    background: #121E39;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    transition: ease all .15s;
+}
+
+.requests-page table .btn-container button:hover {
+    transform: scaleX(1.02);
+}
+
+/* End of requests page */
+
+/* Request details page */
+.request-page {
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.request-page .card-title {
+    text-transform: capitalize;
+    font-size: 34px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* End of request details page */
 
 /* Media */
 @media (max-width:1800px) {
@@ -1699,6 +1825,10 @@ footer nav p {
 
     .statistics-container {
         scale: 0.8;
+    }
+
+    .sign-in-page {
+        width: 50% !important;
     }
 }
 
@@ -1794,8 +1924,6 @@ footer nav p {
     footer nav {
         width: 100%;
     }
-
-    ;
 }
 
 @media (max-width:1150px) {
@@ -2074,6 +2202,10 @@ footer nav p {
 
     .teachers h2 {
         margin-bottom: 0px !important;
+    }
+
+    .sign-in-page {
+        width: 100% !important;
     }
 }
 
