@@ -9,7 +9,7 @@ import twitter from '../assets/twitter.png';
 import google from '../assets/google.png';
 export default function Teachers() {
     return (
-        <div id="teachers" className="teachers">
+        <div className="teachers">
             <h2>OUR TEACHERS</h2>
             <div className='teachers_div'>
                 <div>

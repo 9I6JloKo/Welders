@@ -1,7 +1,10 @@
 import React from 'react';
 import timer from '../assets/timer-icon.svg';
 
-export default function Program() {
+export default function Program({ contacts }) {
+    function contactsClick() {
+        contacts.current.scrollIntoView({ behavior: 'smooth' });
+    }
     return (
         <div className="program-page">
             <div className="gray-bg"></div>
@@ -23,7 +26,8 @@ export default function Program() {
                                 <li>Only basic education required</li>
                                 <li>Entrance test required</li>
                             </ul>
-                            <a href="/contacts" className="btn-container">
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a onClick={contactsClick} className="btn-container">
                                 <button>Continue</button>
                             </a>
                         </div>
@@ -76,7 +80,8 @@ export default function Program() {
                                 <li>Only basic education required</li>
                                 <li>Entrance test required</li>
                             </ul>
-                            <a href="/contacts" className="btn-container">
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a onClick={contactsClick} className="btn-container">
                                 <button>Continue</button>
                             </a>
                         </div>

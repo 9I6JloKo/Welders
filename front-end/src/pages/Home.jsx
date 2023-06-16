@@ -1,6 +1,13 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 
-export default function Home() {
+export default function Home({ program, contacts }) {
+    function programClick() {
+        program.current.scrollIntoView({ behavior: 'smooth' });
+    }
+    function contactsClick() {
+        contacts.current.scrollIntoView({ behavior: 'smooth' });
+    }
     return (
         <div>
             <div className="main-page">
@@ -12,10 +19,10 @@ export default function Home() {
                     <p>Our training facility trains the most qualified welders in the world.</p>
                     <div className="buttons">
                         <div className="btn-container">
-                            <a href="#program">OUR PROGRAM</a>
+                            <a onClick={programClick}>OUR PROGRAM</a>
                         </div>
                         <div className="btn-container">
-                            <a href="#contacts">APPLY TO A COURSE</a>
+                            <a onClick={contactsClick}>APPLY TO A COURSE</a>
                         </div>
                     </div>
                 </div>

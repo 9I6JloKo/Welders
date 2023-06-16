@@ -13,7 +13,7 @@ import picture8 from '../assets/image14.jpg';
 export default function Gallery() {
     const pictures = [picture1, picture2, picture3, picture4, picture5, picture6, picture7, picture8];
     return (
-        <div id="gallery" className="gallery">
+        <div className="gallery">
             <h2>GALLERY</h2>
             <Carousel id='carousel'>
                 {pictures.map((picture, index) => {

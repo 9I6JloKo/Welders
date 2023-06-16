@@ -19,8 +19,30 @@ $(document).ready(function () {
         $('.nav-link-apply').show();
         headerTransition();
     });
-
+    $('.header').ready(function () {
+        const url = window.location.pathname;
+        if (url !== '/') {
+            $('.header').addClass(['main', 'default']);
+            $('.header .navbar-nav').show();
+            // dark nav links + logo
+            $('.header a, .header p').removeClass('text-white');
+            $('.header a, .header p').addClass('text-dark');
+            // dark burger menu
+            $('.header').removeClass('navbar-dark');
+            $('.header').addClass('navbar-light');
+            // increase logo saturation
+            $('.header .navbar-brand svg').css('filter', 'saturate(150%)');
+        }
+        $('.nav-link-apply a').mouseover(function () { 
+            $(this).addClass('text-white');
+        });
+        $('.nav-link-apply a').mouseleave(function () { 
+            $(this).removeClass('text-white');
+            $(this).addClass('text-dark');
+        });
+    });
 });
+
 
 function headerTransition() {
     // Header color transition
@@ -94,33 +116,21 @@ function headerTransition() {
             });
         }
     } else {
-        // $('.header .navbar-brand').removeAttr('style');
         $('.header .navbar-brand .logo-text p').removeAttr('style');
         $('.header button').removeAttr('style');
     }
 
     // Mouse hover effect on apply button
-    $('nav .btn-container a').hover(function () {
-        $(window).scrollTop() >= $('.main-page').height()
-            ? $(this).addClass('text-white') : $(this).addClass('text-white');
+    $('.nav-link-apply a').mouseover(function () { 
+        $(this).addClass('text-white');
     });
-    $('nav .btn-container a').mouseleave(function () {
-        $(window).scrollTop() >= $('.main-page').height()
-            ? $(this).addClass('text-dark') : $(this).addClass('text-white');
+    $('.nav-link-apply a').mouseleave(function () {
+        if ($(window).scrollTop() >= ($('.main-page').height() - $('.header').height() + 180)) {
+            $(this).removeClass('text-white');
+            $(this).addClass('text-dark');
+        } else {
+            $(this).removeClass('text-dark');
+            $(this).addClass('text-white');
+        }
     });
-
-    // eslint-disable-next-line no-restricted-globals
-    if (location.pathname !== '/') {
-        $('.header').addClass(['default', 'main']);
-        // Change header to white color
-        $('.header').addClass('default');
-        // dark nav links + logo
-        $('.header a, .header p').addClass('text-dark');
-        $('.header a, .header p').removeClass('text-white');
-        // dark burger menu
-        $('.header').removeClass('navbar-dark');
-        $('.header').addClass('navbar-light');
-        // increase logo saturation
-        $('.header .navbar-brand svg').css('filter', 'saturate(150%)');
-    }
 }

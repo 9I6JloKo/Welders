@@ -8,8 +8,11 @@ import kutsekoda from '../assets/kutsekoda-logo.png';
 export default function Footer() {
     const logout = async () => {
         try {
-            await axios.delete('http://localhost:8080/auth/logout');
-            sessionStorage.removeItem('username');
+            await axios.delete('http://localhost:5000/auth/logout')
+                .then(() => {
+                    sessionStorage.removeItem('username');
+                    window.location.href = '/';
+                });
         } catch (error) {
             if (error.response) {
                 console.log(error.response.data.message);
@@ -41,11 +44,12 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="btn-container">
-                        {sessionStorage.getItem("username") === undefined
-                            ? <a href="/sign-in">Sign in</a>
-                            : <a href='/' onClick={logout}>Logout</a>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        {sessionStorage.getItem('username') != null ? <a onClick={logout}>Logout</a>
+                            : <a href="/sign-in">Sign in</a>
                         }
                     </div>
+                    {sessionStorage.getItem('username') != null ? <a href='/requests'>Requests List</a> : null}
                 </div>
                 <div className="column">
                     <h3>General contact</h3>
